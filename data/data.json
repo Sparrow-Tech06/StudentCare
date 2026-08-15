@@ -1,7 +1,7 @@
 {
   "slider": [
     {
-      "src": "assets/slide1.jpg",
+      "src": "https://picsum.photos/200/300?random=1",
       "alt": "Delhi Metro journey planning"
     },
     {
