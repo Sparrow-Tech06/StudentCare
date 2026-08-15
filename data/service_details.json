@@ -1,1 +1,151 @@
-
+{
+  "Income Certificate": {
+    "icon": "bi-wallet2",
+    "bg": "bg-soft-primary",
+    "category": "Certificates",
+    "description": "An official document verifying the annual income of an individual or family. Required for various government schemes and benefits.",
+    "fees": "₹50 (Online) / ₹100 (Offline)",
+    "lastDate": "31st December 2026",
+    "processingTime": "7-10 working days",
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "PAN Card",
+      "Bank Statement (last 6 months)",
+      "Salary Slips (if employed)",
+      "Property details (if applicable)"
+    ]
+  },
+  "Domicile Certificate": {
+    "icon": "bi-house-door",
+    "bg": "bg-soft-success",
+    "category": "Certificates",
+    "description": "Proof of permanent residence in a particular state or union territory. Essential for state-level job applications and educational quotas.",
+    "fees": "₹30 (Online) / ₹60 (Offline)",
+    "lastDate": "31st March 2027",
+    "processingTime": "5-7 working days",
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Voter ID",
+      "Ration Card",
+      "School Leaving Certificate",
+      "Electricity Bill (last 3 months)"
+    ]
+  },
+  "Caste Certificate": {
+    "icon": "bi-people",
+    "bg": "bg-soft-warning",
+    "category": "Certificates",
+    "description": "Official document certifying the caste of an individual for reservation benefits and government schemes.",
+    "fees": "₹20 (Online) / ₹50 (Offline)",
+    "lastDate": "31st December 2026",
+    "processingTime": "10-15 working days",
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Birth Certificate",
+      "Parent's Caste Certificate",
+      "Land Records (if applicable)",
+      "Self Declaration"
+    ]
+  },
+  "Birth Certificate": {
+    "icon": "bi-calendar2-plus",
+    "bg": "bg-soft-danger",
+    "category": "Certificates",
+    "description": "Official record of a person's birth, including date, time, and place of birth. Required for school admission, passport, and other official purposes.",
+    "fees": "₹25 (Online) / ₹50 (Offline)",
+    "lastDate": "Apply within 21 days of birth",
+    "processingTime": "3-5 working days",
+    "requiredDocuments": [
+      "Hospital Birth Record",
+      "Parent's Aadhaar Card",
+      "Marriage Certificate (if parents married)",
+      "Address Proof"
+    ]
+  },
+  "Death Certificate": {
+    "icon": "bi-file-earmark-minus",
+    "bg": "bg-soft-purple",
+    "category": "Certificates",
+    "description": "Official document certifying the death of an individual. Required for inheritance, insurance claims, and other legal processes.",
+    "fees": "₹20 (Online) / ₹40 (Offline)",
+    "lastDate": "Apply within 21 days of death",
+    "processingTime": "3-5 working days",
+    "requiredDocuments": [
+      "Hospital Death Report",
+      "Aadhaar Card of the deceased",
+      "Identity Proof of applicant",
+      "Address Proof of applicant"
+    ]
+  },
+  "Current Holding": {
+    "icon": "bi-graph-up-arrow",
+    "bg": "bg-soft-danger",
+    "category": "Pension",
+    "description": "View your current pension holdings, including accumulated funds, investments, and returns.",
+    "fees": "Free",
+    "lastDate": "N/A",
+    "processingTime": "Instant (Online)",
+    "requiredDocuments": [
+      "Pension Account Number",
+      "Registered Mobile Number",
+      "Date of Birth"
+    ]
+  },
+  "Calculator & Process": {
+    "icon": "bi-calculator",
+    "bg": "bg-soft-purple",
+    "category": "Pension",
+    "description": "Calculate your estimated pension based on contributions, age, and retirement plan. Step-by-step process guide included.",
+    "fees": "Free",
+    "lastDate": "N/A",
+    "processingTime": "Instant (Online)",
+    "requiredDocuments": [
+      "Pension Account Number",
+      "Contribution History",
+      "Date of Birth"
+    ]
+  },
+  "Passbook": {
+    "icon": "bi-book",
+    "bg": "bg-soft-teal",
+    "category": "Pension",
+    "description": "View and download your pension passbook with complete transaction history and balance details.",
+    "fees": "Free",
+    "lastDate": "N/A",
+    "processingTime": "Instant (Online)",
+    "requiredDocuments": [
+      "Pension Account Number",
+      "Registered Mobile Number",
+      "OTP Verification"
+    ]
+  },
+  "Life Certificate": {
+    "icon": "bi-file-check",
+    "bg": "bg-soft-pink",
+    "category": "Pension",
+    "description": "Submit your annual life certificate to continue receiving pension benefits. Available online and offline.",
+    "fees": "Free",
+    "lastDate": "31st December 2026",
+    "processingTime": "Instant (Online) / 2-3 days (Offline)",
+    "requiredDocuments": [
+      "Pension Account Number",
+      "Aadhaar Card",
+      "Recent Photograph",
+      "Jeevan Pramaan (if online)"
+    ]
+  },
+  "Pension Summary": {
+    "icon": "bi-clipboard-data",
+    "bg": "bg-soft-orange",
+    "category": "Pension",
+    "description": "Get a complete summary of your pension account including contributions, returns, and projections.",
+    "fees": "Free",
+    "lastDate": "N/A",
+    "processingTime": "Instant (Online)",
+    "requiredDocuments": [
+      "Pension Account Number",
+      "Date of Birth",
+      "Registered Mobile Number"
+    ]
+  }
+}
