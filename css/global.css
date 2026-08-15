@@ -1,5 +1,7 @@
 :root {
-  
+   --background: #fff ;
+   --text-color: #000 ;
+   --border: red;
 }
 /**********************/
 * {
