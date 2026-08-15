@@ -1,9 +1,12 @@
 :root {
    --background: #fff ;
    --text-color: #000 ;
-   --border: #f8f9fa ;
-
+   
+   --border: #eee ;
+   --radius: 16px ;
+   
    --header: #fff ;
+   
 }
 /**********************/
 * {
