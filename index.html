@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>UMANGO · Home</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="css/style.css?v=2.2.2">
+  <link rel="stylesheet" href="css/global.css?v=2.2.2">
+  
+  <style>
+    * { box-sizing: border-box; }
+    body { background: #f2f4f8; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; padding-bottom: 40px; }
+    .app-wrapper { max-width: 480px; margin: 0 auto; background: #ffffff; min-height: 100vh; box-shadow: 0 0 20px rgba(0,0,0,0.03); }
+    .header-brand { display: flex; align-items: center; gap: 6px; }
+    .brand-icon { font-size: 2rem; color: #0d6efd; background: #e9f0ff; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border-radius: 14px; }
+    .brand-text { font-weight: 700; font-size: 1.3rem; color: #0b1e3a; }
+    .brand-text span { color: #0d6efd; }
+    .header-actions { display: flex; gap: 14px; align-items: center; }
+    .header-actions i { font-size: 1.6rem; color: #1e293b; cursor: pointer; }
+    
+    .search-bar { background: ; border-radius: 16px; padding: 8px 18px; display: flex; align-items: center; gap: 10px; border: 1px solid #e9edf2; }
+    .search-bar i { color: #6c7a91; font-size: 1.3rem; }
+    .search-bar input { border: none; background: transparent; width: 100%; outline: none; font-size: 0.95rem; padding: 6px 0; }
+    .search-bar input::placeholder { color: #8b9ab0; }
+    
+    .view-all-link { display: inline-block; background: #f1f5f9; padding: 10px 20px; border-radius: 40px; color: #0b1e3a; font-weight: 600; font-size: 0.95rem; text-decoration: none; border: 1px solid #e2e8f0; transition: 0.15s; }
+    .view-all-link:hover { background: #e2e8f0; }
+    .slider-static { border-radius: 24px; overflow: hidden; position: relative; background: #d9e2ef; }
+    .slider-img { width: 100%; height: 160px; object-fit: cover; display: block; }
+    .slider-indicators { position: absolute; bottom: 12px; left: 0; right: 0; display: flex; justify-content: center; gap: 8px; }
+    .slider-indicators span { width: 8px; height: 8px; border-radius: 10px; background: #b0c4de; transition: 0.2s; display: inline-block; cursor: pointer; }
+    .slider-indicators .active { background: #0d6efd; width: 20px; }
+    .section-title { font-weight: 700; color: #0b1e3a; font-size: 1.2rem; display: flex; align-items: center; gap: 8px; }
+    .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .service-card { background: white; border-radius: 20px; padding: 16px 6px 12px; text-align: center; border: 1px solid #f0f3f9; transition: all 0.15s; text-decoration: none; color: #0b1e3a; display: flex; flex-direction: column; align-items: center; gap: 6px; cursor: pointer; }
+    .service-card:hover { background: #fafcff; border-color: #cbd9ed; transform: translateY(-2px); }
+    .service-icon { width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 16px; font-size: 1.8rem; color: #0b1e3a; background: #eef4ff; margin-bottom: 4px; }
+    .service-name { font-size: 0.75rem; font-weight: 600; line-height: 1.3; color: #1e293b; word-break: break-word; }
+    .pension-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    .pension-grid .service-card { padding: 12px 4px 10px; }
+    .pension-grid .service-icon { width: 44px; height: 44px; font-size: 1.5rem; }
+    .pension-grid .service-name { font-size: 0.7rem; }
+    .bg-soft-primary { background: #e9f0ff; }
+    .bg-soft-success { background: #e4f5ec; }
+    .bg-soft-warning { background: #fff4e0; }
+    .bg-soft-danger { background: #ffe9e9; }
+    .bg-soft-purple { background: #efe6ff; }
+    .bg-soft-teal { background: #ddf3f0; }
+    .bg-soft-pink { background: #ffe6f0; }
+    .bg-soft-orange { background: #ffedd5; }
+    .text-muted-small { font-size: 0.75rem; color: #64748b; }
+    @media (max-width: 400px) { .pension-grid { grid-template-columns: repeat(3, 1fr); } }
+    .slider-track { display: flex; transition: transform 0.4s ease; will-change: transform; }
+    .slider-track .flex-shrink-0 { flex: 0 0 100%; width: 100%; }
+  </style>
+  
+</head>
+<body>
+<main class="app-wrapper p-3 p-sm-4">
+  <!-- HEADER -->
+  <header class="d-flex justify-content-between align-items-center mb-3">
+    <div class="header-brand">
+      <div class="brand-icon" aria-hidden="true"><i class="bi bi-grid-fill"></i></div>
+      <div class="brand-text">Student<span>Care</span></div>
+    </div>
+    <div class="header-actions">
+      <i class="bi bi-whatsapp" role="button" aria-label="WhatsApp"></i>
+      <i class="bi bi-bell" role="button" aria-label="Notifications"></i>
+    </div>
+  </header>
+
+  <!-- SEARCH -->
+  <section class="search-bar mb-3" role="search">
+    <a href="search.html">
+       <input type="text" placeholder="Search for EPFO" aria-label="Search services">
+       <i class="bi bi-search" aria-hidden="true"></i>
+    </a>
+  </section>
+
+  <!-- VIEW ALL SERVICES -->
+  <nav class="d-flex justify-content-between align-items-center mb-3">
+    <a href="service.html?service=all" class="view-all-link">
+      View all services <i class="bi bi-chevron-right" aria-hidden="true"></i>
+    </a>
+  </nav>
+
+  <!-- SLIDER -->
+  <section class="slider-static mb-4" id="sliderContainer" aria-label="Featured services slider">
+    <div class="slider-track" id="sliderTrack"></div>
+    <div class="slider-indicators" id="sliderIndicators" role="tablist"></div>
+  </section>
+
+  <!-- DYNAMIC SECTIONS -->
+  <section id="sectionsContainer"></section>
+
+  <!-- FOOTER -->
+  <footer class="mt-4 d-flex flex-wrap gap-2 justify-content-between align-items-center border-top pt-3 text-muted-small">
+    <span><i class="bi bi-person" aria-hidden="true"></i> Student</span>
+    <span><i class="bi bi-phone" aria-hidden="true"></i> myUmanGo</span>
+    <span><i class="bi bi-box" aria-hidden="true"></i> Digilocker</span>
+    <span><i class="bi bi-layers" aria-hidden="true"></i> Schemes</span>
+  </footer>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  (function() {
+    const DATA_URL = 'data/data.json';
+    const container = document.getElementById('sectionsContainer');
+    const sliderTrack = document.getElementById('sliderTrack');
+    const indicators = document.getElementById('sliderIndicators');
+
+    let slideIndex = 0;
+    let slides = [];
+
+    function renderSlider(images) {
+      slides = images || [];
+      sliderTrack.innerHTML = '';
+      indicators.innerHTML = '';
+      if (!slides.length) return;
+      slides.forEach((img, i) => {
+        const div = document.createElement('div');
+        div.className = 'flex-shrink-0';
+        div.style.width = '100%';
+        div.innerHTML = `<img src="${img.src}" alt="${img.alt || 'Slide'}" class="slider-img" loading="lazy">`;
+        sliderTrack.appendChild(div);
+        const dot = document.createElement('span');
+        dot.className = i === 0 ? 'active' : '';
+        dot.dataset.index = i;
+        dot.setAttribute('role', 'tab');
+        dot.setAttribute('aria-label', `Slide ${i+1}`);
+        dot.onclick = () => goToSlide(i);
+        indicators.appendChild(dot);
+      });
+      goToSlide(0);
+    }
+
+    function goToSlide(index) {
+      if (!slides.length) return;
+      slideIndex = Math.max(0, Math.min(index, slides.length - 1));
+      sliderTrack.style.transform = `translateX(-${slideIndex * 100}%)`;
+      document.querySelectorAll('#sliderIndicators span').forEach((dot, i) => {
+        dot.classList.toggle('active', i === slideIndex);
+      });
+    }
+
+    function renderSections(categories) {
+      container.innerHTML = '';
+      categories.forEach((cat, idx) => {
+        const isPension = cat.name.toLowerCase() === 'pension';
+        const gridClass = isPension ? 'pension-grid' : 'service-grid';
+        const section = document.createElement('section');
+        section.className = idx > 0 ? 'mt-4' : '';
+        section.innerHTML = `
+          <header class="section-title mb-2">
+            <i class="bi bi-${isPension ? 'pie-chart' : 'patch-check'}" style="color:#0d6efd;" aria-hidden="true"></i> ${cat.name}
+          </header>
+          <div class="${gridClass}">
+            ${cat.services.map(s => `
+              <a href="service.html?service=${encodeURIComponent(s.name)}" class="service-card">
+                <div class="service-icon ${s.bg || 'bg-soft-primary'}"><i class="bi ${s.icon || 'bi-file-earmark'}" aria-hidden="true"></i></div>
+                <span class="service-name">${s.name}</span>
+              </a>
+            `).join('')}
+          </div>
+        `;
+        container.appendChild(section);
+      });
+    }
+
+    fetch(DATA_URL)
+      .then(res => { if (!res.ok) throw new Error('Failed to load data'); return res.json(); })
+      .then(data => {
+        if (data.slider) renderSlider(data.slider);
+        if (data.categories) renderSections(data.categories);
+      })
+      .catch(err => {
+        console.error('Error loading data.json:', err);
+        document.getElementById('sectionsContainer').innerHTML = `
+          <div class="alert alert-danger" role="alert">
+            <i class="bi bi-exclamation-triangle" aria-hidden="true"></i> Failed to load services. Please try again.
+          </div>
+        `;
+      });
+  })();
+</script>
+</body>
+</html>
+
