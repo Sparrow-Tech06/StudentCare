@@ -1,0 +1,34 @@
+{
+  "slider": [
+    {
+      "src": "assets/slide1.jpg",
+      "alt": "Delhi Metro journey planning"
+    },
+    {
+      "src": "assets/slide2.jpg",
+      "alt": "Spot your experience"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Certificates",
+      "services": [
+        { "name": "Income Certificate", "icon": "bi-wallet2", "bg": "bg-soft-primary" },
+        { "name": "Domicile Certificate", "icon": "bi-house-door", "bg": "bg-soft-success" },
+        { "name": "Caste Certificate", "icon": "bi-people", "bg": "bg-soft-warning" },
+        { "name": "Birth Certificate", "icon": "bi-calendar2-plus", "bg": "bg-soft-danger" },
+        { "name": "Death Certificate", "icon": "bi-file-earmark-minus", "bg": "bg-soft-purple" }
+      ]
+    },
+    {
+      "name": "Pension",
+      "services": [
+        { "name": "Current Holding", "icon": "bi-graph-up-arrow", "bg": "bg-soft-danger" },
+        { "name": "Calculator & Process", "icon": "bi-calculator", "bg": "bg-soft-purple" },
+        { "name": "Passbook", "icon": "bi-book", "bg": "bg-soft-teal" },
+        { "name": "Life Certificate", "icon": "bi-file-check", "bg": "bg-soft-pink" },
+        { "name": "Pension Summary", "icon": "bi-clipboard-data", "bg": "bg-soft-orange" }
+      ]
+    }
+  ]
+}
